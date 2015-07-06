@@ -1,0 +1,9 @@
+.content{
+    background:#fff;
+    box-shadow: 0 3px 4px #e4e4e4;
+    margin-top: 10px;
+    min-height: 400px;
+}
+#comment{
+    padding:20px 15px;
+}
