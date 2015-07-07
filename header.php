@@ -32,8 +32,11 @@
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/article-list.css"/>
     <?php wp_head(); ?>
-    <!--百度统计-->
-    <script>var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="//hm.baidu.com/hm.js?9fae61f68debf50b1a31eefca8320005";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s)})();</script>
+    <?php
+    // 第三方统计代码
+    echo get_option('blog_statistics');
+    ?>
+
 </head>
 <body>
 <nav id="menu" class="visible-sm">

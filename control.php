@@ -6,13 +6,14 @@
  * Time: 19:58
  */
 
-$themename = "主题";
+$themename = "ALL-IN";
 $shortname = "blog";
 $options = array(
     array("name" => "首页关键词(Keywords)", "id" => $shortname . "_keywords", "std" => "", "type" => "textarea"),
     array("name" => "首页描述(Description)", "id" => $shortname . "_description", "std" => "", "type" => "textarea"),
     array("name" => "默认封面图片设置","type" => "heading","desc" => ""),
     array("name" => "默认封面图片地址","id" => $shortname."_popimg","std" => "","type" => "textarea"),
+    array("name" => "第三方统计代码","id" => $shortname."_statistics","std" => "","type" => "textarea"),
 );
 
 function mytheme_add_admin()
