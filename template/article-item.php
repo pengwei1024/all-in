@@ -27,10 +27,16 @@
     $fmimg = get_post_meta($post->ID, "fmimg_value", true);
     $cti = catch_that_image();
     if($fmimg) {
-        $showimg = str_replace("ecjtu.org","apkfuns.com",$fmimg);
-    } else {
+        $find = array("ecjtu.org","pengwei");
+        $replace = array("apkfuns.com", "all-in");
+        $showimg = str_replace($find, $replace, $fmimg);  // 暂时解决方案
+    }else if($cti) {
         $showimg = $cti;
-    };
+    }else if(get_option('blog_popimg')){
+        $showimg = get_option('blog_popimg');
+    }else{
+        $showimg = 'http://7u2n7b.com1.z0.glb.clouddn.com/dm_2.jpg';
+    }
     ?>
     <img src="<?php echo trim($showimg); ?>" class="article_thumbnail img-responsive" title="<?php the_title_attribute(); ?>"
         alt="<?php the_title_attribute(); ?>"/>

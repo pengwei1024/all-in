@@ -399,14 +399,14 @@ function new_meta_boxes()
         echo '<textarea id="default_image" cols="100" rows="3" name="' . $meta_box['name'] . '_value">' . $meta_box_value . '</textarea><br />';
         $dir = opendir(dirname(__FILE__) . "/images/rand");
         $source = "";
-        $blogUrl = home_url() . "/wp-content/themes/pengwei/images/rand/";
+        $blogUrl= get_stylesheet_directory_uri(). "/images/rand/";
         while (($file = readdir($dir)) !== false) {
             if ($file == '.' || $file == '..') {
                 continue;
             }
             $source .= "<option value='$blogUrl$file'>$file</option>";
         }
-        echo "<select onchange='var value =this.options[this.selectedIndex].value;"
+        echo "本地图库：<select onchange='var value =this.options[this.selectedIndex].value;"
             . "var tv = document.getElementById(\"default_image\");tv.value = value;'>$source</select>";
     }
 }
