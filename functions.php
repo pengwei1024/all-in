@@ -414,7 +414,6 @@ function new_meta_boxes()
 function create_meta_box()
 {
     global $theme_name;
-
     if (function_exists('add_meta_box')) {
         add_meta_box('new-meta-boxes', '自定义模块', 'new_meta_boxes', 'post', 'normal', 'high');
     }
