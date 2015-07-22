@@ -34,9 +34,8 @@
     <?php wp_head(); ?>
     <?php
     // 第三方统计代码
-    echo get_option('blog_statistics');
+    echo stripslashes(get_option('blog_statistics'));
     ?>
-
 </head>
 <body>
 <nav id="menu" class="visible-sm">
