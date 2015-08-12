@@ -39,6 +39,9 @@ Template Name: friend-link
             .content-box{
                 padding:0 0 30px 30px;
             }
+            .content-box a{
+                color: #667ebd;
+            }
         </style>
         <?php
         wp_nav_menu(array(
@@ -66,6 +69,17 @@ Template Name: friend-link
             'walker'=>new ignore_Walker_Nav_Menu(),
         ));
         ?>
+        <div class="content-box">
+            <h2>
+                <strong>推荐服务器</strong>
+            </h2>
+            <p style="margin-top: 20px;line-height: 28px;">
+                有兴趣自己搭建自己服务器的推荐购买美团云。博主已使用一年多，性能靠谱，价钱也不算贵，客服比阿里云要好。<br/>
+                <a href="https://mos.meituan.com/doc/about/knowus" target="_blank">了解美团云:https://mos.meituan.com/doc/about/knowus</a><br/>
+                <a href="https://mos.meituan.com/r/70c0c4ae31" target="_blank">推荐购买链接:https://mos.meituan.com/r/70c0c4ae31</a>
+            </p>
+
+        </div>
         <?php comments_template(); ?>
     </div>
     <div class="clear"></div>

@@ -483,7 +483,6 @@ if (function_exists('register_sidebar_widget')) {
  */
 function friend_link()
 {
-    //include(TEMPLATEPATH . '/template/friendLink.php');
     wp_nav_menu(array(
         'theme_location'=>'friend-link',
         'container'=>'div',
