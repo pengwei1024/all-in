@@ -66,7 +66,8 @@ Template Name: about_page
                 <img src="<?php bloginfo('template_directory'); ?>/images/circled.jpg"/>
                 联系方式</div>
             <div class="blog_about_content">
-                <div>Email ：<a href='http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=wei8888go@gmail.com' target="_black">wei8888go@gmail.com</a></div>
+                <div>Email ：<a href='http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=pengwei1024@gmail.com' target="_black">pengwei1024@gmail.com</a></div>
+                <div>github ：<a href='https://github.com/pengwei1024' target="_black">https://github.com/pengwei1024</a></div>
                 <div>QQ :<a href="http://wpa.qq.com/msgrd?v=3&uin=495610489&site=pw.ecjtu.org&menu=yes" target="_black">
                         <img src='<?php bloginfo('template_directory'); ?>/images/contacts.gif'/></a> </div>
             </div>

@@ -19,12 +19,11 @@ if(function_exists('register_nav_menus')){
 }
 
 //解决gravatar头像失效
-function v7v3_get_avatar($avatar)
-{
-    $avatar = str_replace(array("http://www.gravatar.com", "0.gravatar.com", "1.gravatar.com", "2.gravatar.com"), "cd.v7v3.com", $avatar);
+function get_avatar_uctheme( $avatar ) {
+    $avatar = preg_replace( "/http:\/\/(www|\d).gravatar.com/","http://gravatar.duoshuo.com",$avatar);
     return $avatar;
 }
-add_filter("get_avatar","v7v3_get_avatar", 10, 3 );
+add_filter( 'get_avatar', 'get_avatar_uctheme' );
 
 
 //分页工具
@@ -374,10 +373,6 @@ $new_meta_boxes = array(
         "name" => "fmimg",
         "std" => "",
         "title" => "封面图片(605x220):"),
-    /*"tuijian" => array(
-        "name" => "tuijian",
-        "std" => "",
-        "title" => "置顶图片(296x175):")*/
 );
 
 function new_meta_boxes()
@@ -514,6 +509,4 @@ class ignore_Walker_Nav_Menu extends Custom_Walker_Nav_Menu{
     }
 
 }
-
-//include(TEMPLATEPATH . '/template/top-level-cats.php');
 ?>

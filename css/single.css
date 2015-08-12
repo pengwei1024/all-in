@@ -22,16 +22,23 @@
 .content-box>article .article-info>*{
     margin: 0 5px;
 }
+.content-box p{
+    font-family: "Microsoft YaHei","WenQuanYi Micro Hei",Arial,Verdana,Tahoma,sans-serif;
+    color: #2f2f2f;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.7;
+}
 .navigation{
-    margin: 30px 0 20px 10px;
+    margin: 30px 0 20px 0;
     line-height: 27px;
-
+    font-size: 13px;
 }
 .navigation span{
     color: #667ebd;
 }
 .navigation span:hover{
-    color: #ff6600;
+    text-decoration: underline;
 }
 .article_content{
     padding: 15px 10px 0;
