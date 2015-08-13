@@ -23,8 +23,8 @@
                     <?php the_content(); ?>
                 </div>
                 <div class="navigation">
-                    <div><?php previous_post_link('%link','上一篇:&nbsp;<span>%title</span>') ?></div>
-                    <div><?php next_post_link('%link','下一篇:&nbsp;<span>%title</span>') ?></div>
+                    <div><?php previous_post_link('%link','<b>上一篇:</b><span>%title</span>') ?></div>
+                    <div><?php next_post_link('%link','<b>下一篇:</b><span>%title</span>') ?></div>
              </div>
             <?php get_template_part('./template/singleRecommend'); ?>
             <?php get_template_part('./template/share'); ?>
