@@ -9,7 +9,7 @@
             <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?>
                 <?php setPostViews(get_the_ID()); ?>
-                <h2><?php the_title_attribute(); ?></h2>
+                <h2 class="title"><?php the_title_attribute(); ?></h2>
                 <div class="article-info">
                     <span>
                         阅读:&nbsp;<?php echo getPostViews(get_the_ID()); ?>
