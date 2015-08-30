@@ -32,9 +32,10 @@
         $showimg = 'http://7u2n7b.com1.z0.glb.clouddn.com/dm_2.jpg';
     }
     ?>
-    <img src="<?php echo trim($showimg); ?>" class="article_thumbnail img-responsive" title="<?php the_title_attribute(); ?>"
-        alt="<?php the_title_attribute(); ?>"/>
-
+    <div class="article_thumbnail">
+        <img src="<?php echo trim($showimg); ?>" class="img-responsive" title="<?php the_title_attribute(); ?>"
+             alt="<?php the_title_attribute(); ?>"/>
+    </div>
     <div class="article-description">
         <?php echo trim(mb_strimwidth(strip_tags(apply_filters('the_content',
             $post->post_content)), 0, 200, "……")) ?>&nbsp;&nbsp;&nbsp;
