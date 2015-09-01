@@ -14,6 +14,7 @@ $options = array(
     array("name" => "默认封面图片设置","type" => "heading","desc" => ""),
     array("name" => "默认封面图片地址","id" => $shortname."_popimg","std" => "","type" => "textarea"),
     array("name" => "第三方统计代码","id" => $shortname."_statistics","std" => "","type" => "textarea"),
+    array("name" => "站点尾部声明<br/>(可包含html代码)","id" => $shortname."_footer","std" => "","type" => "textarea"),
 );
 
 function mytheme_add_admin()

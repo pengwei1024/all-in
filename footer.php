@@ -1,8 +1,7 @@
 </section>
 <footer id="footer">
     <div>
-        Power By WordPress&nbsp;&&nbsp;all-in</br>
-        CopyRight © 2013 - 2015 舞影凌风 All Rights Reserved.
+        <?php echo stripslashes(get_option('blog_footer')); ?>
     </div>
 </footer>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery-1.11.1.min.js"></script>

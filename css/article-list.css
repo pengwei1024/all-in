@@ -139,6 +139,11 @@ a.read_article:hover {
     color: #434a54;
     font-weight: normal;
     margin: 12px 0 13px;
+/*  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;*/
 
 }
 
@@ -156,7 +161,7 @@ a.read_article:hover {
 }
 
 .article-item .float-left a {
-    color: #667ebd;;
+    color: #667ebd;
 }
 
 .article-item .float-right em, .article-item .float-right a {
