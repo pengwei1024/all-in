@@ -58,7 +58,15 @@
 }
 
 .article_content a{
-    color: #667ebd !important;
+    color: #667ebd;
+}
+
+.article_content a[title^='View all posts in']{
+    background-color: rgba(0,0,0,0.04);
+    border-radius: 3px;
+    padding: 0.2em 0.4em;
+    margin: 0;
+    color: #6f6f6f;
 }
 
 .article_content img{
@@ -71,3 +79,4 @@
     float: right;
     margin: 10px;
 }
+
