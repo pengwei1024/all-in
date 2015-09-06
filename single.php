@@ -22,6 +22,7 @@
                 <div class="article_content">
                     <?php the_content(); ?>
                 </div>
+
                 <div class="navigation">
                     <div><?php previous_post_link('%link','<b>上一篇:</b><span>%title</span>') ?></div>
                     <div><?php next_post_link('%link','<b>下一篇:</b><span>%title</span>') ?></div>
